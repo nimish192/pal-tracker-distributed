@@ -14,6 +14,8 @@ buildscript {
         junitVersion = "4.12"
         okhttpVersion = "3.12.0"
         jsonPathVersion = "2.4.0"
+        springCloudVersion = "Finchley.SR4"
+        springCloudServicesClientLibrariesVersion = "2.0.3.RELEASE"
     }
 
     repositories {
@@ -24,6 +26,7 @@ buildscript {
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
         classpath "mysql:mysql-connector-java:$mysqlVersion"
+        classpath "org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE"
     }
 }
 
